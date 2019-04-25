@@ -1,7 +1,66 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.img {
+	animation-name: pan-right;
+	animation-duration: 12s;
+	animation-fill-mode: both;
+	/*position: absolute;
+	left: 0;*/
+}
+
 .banner {
 	width: 728px;
 	height: 90px;
+	overflow: hidden;
+}
+
+.line {
+	animation-name: appear-disappear;
+	animation-duration: 4s;
+	font: Arial, "sans-serif";	
+	font-size: 30px;
+	color: white;
+	opacity: 0;
+	top: 0px;
+	left: 200px;
+	position: absolute;
+}
+
+.line2 {
+	animation-delay: 4.2s;
+}
+
+.line3 {
+	animation-delay: 8.4s;
+}
+
+.line4 {
+	animation-name: appear;
+	animation-duration: 4s;
+	animation-fill-mode: both;
+	animation-delay: 12.6s;
+}
+
+.logo {
+	top: 14px;
+	left: 324px;
+	position: absolute;
+}
+
+@keyframes pan-right {
+	0% {transform: translate(0px,-5px)}
+	100% {transform: translate(-250px,-5px)}
+}
+
+@keyframes appear-disappear {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes appear {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 }
