@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption');
 
 .img {
 	animation-name: pan-right;
@@ -18,7 +19,7 @@
 .line {
 	animation-name: appear-disappear;
 	animation-duration: 4s;
-	font: Arial, "sans-serif";	
+	font-family: 'PT Serif Caption', serif;
 	font-size: 30px;
 	color: white;
 	opacity: 0;
